@@ -1,0 +1,22 @@
+08/19/2024 19:23:57 +05:30 [Information] - This is just a log in GetAllPublishers()
+08/19/2024 19:33:10 +05:30 [Information] - This is just a log in GetAllPublishers()
+08/19/2024 19:33:59 +05:30 [Information] - This is just a log in GetAllPublishers()
+08/19/2024 19:40:22 +05:30 [Information] - This is just a log in GetAllPublishers()
+08/19/2024 19:50:12 +05:30 [Error] - An unhandled exception has occurred while executing the request.
+System.Exception: This is just a log in GetAllPublishers()
+   at my_books.Controllers.PublishersController.GetAllPublishers(String sortBy, String searchString, Int32 pageNumber) in D:\my-books\my-books\Controllers\PublishersController.cs:line 24
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+08/19/2024 19:50:16 +05:30 [Error] - {"StatusCode":500,"Message":"This is just a log in GetAllPublishers()","Path":"/api/publishers/get-all-publishers"}
