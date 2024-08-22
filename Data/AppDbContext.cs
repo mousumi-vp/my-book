@@ -1,10 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
 using my_books.Data.Model;
 
 namespace my_books.Data
 {
-    public class AppDbContext:DbContext
+    public class AppDbContext:IdentityDbContext<ApplicationUser>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options):base(options)
         {
@@ -31,5 +32,6 @@ namespace my_books.Data
         public DbSet<Book_Author> Books_Authors { get; set; }
         public DbSet<Publisher> Publishers { get; set; }
         public DbSet<Log> Logs { get; set; }
+        public DbSet<RefreshToken> RefreshTokens { get; set; }
     }
 }
